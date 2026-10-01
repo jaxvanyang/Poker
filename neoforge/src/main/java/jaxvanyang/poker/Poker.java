@@ -1,5 +1,7 @@
 package jaxvanyang.poker;
 
+import jaxvanyang.poker.block.CasinoChair;
+import jaxvanyang.poker.block.PokerTable;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
@@ -23,13 +25,16 @@ public class Poker {
             MOD_ID
     );
 
-    public static final DeferredBlock<Block> POKER_TABLE = BLOCKS.registerBlock(
-            "poker_table",
-            jaxvanyang.poker.block.PokerTable::new
-    );
+    public static final DeferredBlock<Block> POKER_TABLE = BLOCKS.registerBlock("poker_table", PokerTable::new);
     public static final DeferredItem<BlockItem> POKER_TABLE_ITEM = ITEMS.registerSimpleBlockItem(
             "poker_table",
             POKER_TABLE
+    );
+
+    public static final DeferredBlock<Block> CASINO_CHAIR = BLOCKS.registerBlock("casino_chair", CasinoChair::new);
+    public static final DeferredItem<BlockItem> CASINO_CHAIR_ITEM = ITEMS.registerSimpleBlockItem(
+            "casino_chair",
+            CASINO_CHAIR
     );
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> POKER_TAB = CREATIVE_MODE_TABS.register(
@@ -39,6 +44,7 @@ public class Poker {
                     .icon(() -> POKER_TABLE_ITEM.get().getDefaultInstance())
                     .displayItems((p, output) -> {
                         output.accept(POKER_TABLE_ITEM);
+                        output.accept(CASINO_CHAIR_ITEM);
                     })
                     .build()
     );
