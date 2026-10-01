@@ -1,0 +1,7 @@
+{
+    "variants": {
+            "": {
+                "model": "jaxvanyang_poker:block/poker_table_base"
+            }
+    }
+}
