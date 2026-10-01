@@ -15,7 +15,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
-public class PokerTable extends Block {
+public class CasinoTable extends Block {
     private static final VoxelShape SHAPE = Block.box(0, 0, 0, 16, 15, 16);
 
     private static final BooleanProperty NORTH = BooleanProperty.create("north");
@@ -29,7 +29,7 @@ public class PokerTable extends Block {
     private static final BooleanProperty SOUTHEAST = BooleanProperty.create("southeast");
 
 
-    public PokerTable(Properties properties) {
+    public CasinoTable(Properties properties) {
         super(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS));
 
         registerDefaultState(getStateDefinition().any()
@@ -96,6 +96,6 @@ public class PokerTable extends Block {
 
         Block block = level.getBlockState(pos).getBlock();
 
-        return block instanceof PokerTable;
+        return block instanceof CasinoTable;
     }
 }
