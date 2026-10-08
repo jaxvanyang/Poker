@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "playingcards:bar_stool"
+          "name": "jaxvanyang_poker:casino_chair"
         }
       ],
       "conditions": [

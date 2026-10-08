@@ -1,23 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "P ",
-    "PW",
-    " S"
+    "A ",
+    "AB",
+    " C"
   ],
   "key": {
-    "S": {
+    "A": {
+      "item": "minecraft:black_wool"
+    },
+    "B": {
       "item": "minecraft:stick"
     },
-    "P": {
-      "tag" : "minecraft:planks"
-    },
-    "W": {
-      "item": "minecraft:black_wool"
+    "C": {
+      "item" : "minecraft:smooth_stone_slab"
     }
   },
   "result": {
-    "item": "playingcards:bar_stool",
-    "count": 4
+    "id": "jaxvanyang_poker:casino_chair",
+    "count": 1
   }
 }

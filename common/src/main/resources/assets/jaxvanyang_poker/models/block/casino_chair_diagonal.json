@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "playingcards:models/casion_chair",
-		"particle": "playingcards:models/casion_chair"
+		"0": "jaxvanyang_poker:block/casion_chair",
+		"particle": "jaxvanyang_poker:block/casion_chair"
 	},
 	"elements": [
 		{

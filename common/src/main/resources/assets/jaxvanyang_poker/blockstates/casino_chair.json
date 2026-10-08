@@ -5,7 +5,7 @@
         "facing": 0
       },
       "apply": {
-        "model": "playingcards:block/bar_stool"
+        "model": "jaxvanyang_poker:block/casino_chair"
       }
     },
     {
@@ -13,7 +13,7 @@
         "facing": 1
       },
       "apply": {
-        "model": "playingcards:block/bar_stool_diagonal"
+        "model": "jaxvanyang_poker:block/casino_chair_diagonal"
       }
     },
     {
@@ -21,7 +21,7 @@
         "facing": 2
       },
       "apply": {
-        "model": "playingcards:block/bar_stool",
+        "model": "jaxvanyang_poker:block/casino_chair",
         "y": 90
       }
     },
@@ -30,7 +30,7 @@
         "facing": 3
       },
       "apply": {
-        "model": "playingcards:block/bar_stool_diagonal",
+        "model": "jaxvanyang_poker:block/casino_chair_diagonal",
         "y": 90
       }
     },
@@ -39,7 +39,7 @@
         "facing": 4
       },
       "apply": {
-        "model": "playingcards:block/bar_stool",
+        "model": "jaxvanyang_poker:block/casino_chair",
         "y": 180
       }
     },
@@ -48,7 +48,7 @@
         "facing": 5
       },
       "apply": {
-        "model": "playingcards:block/bar_stool_diagonal",
+        "model": "jaxvanyang_poker:block/casino_chair_diagonal",
         "y": 180
       }
     },
@@ -57,7 +57,7 @@
         "facing": 6
       },
       "apply": {
-        "model": "playingcards:block/bar_stool",
+        "model": "jaxvanyang_poker:block/casino_chair",
         "y": 270
       }
     },
@@ -66,7 +66,7 @@
         "facing": 7
       },
       "apply": {
-        "model": "playingcards:block/bar_stool_diagonal",
+        "model": "jaxvanyang_poker:block/casino_chair_diagonal",
         "y": 270
       }
     }

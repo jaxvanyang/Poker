@@ -2,7 +2,7 @@
   "multipart": [
     {
       "apply": {
-        "model": "jaxvanyang_poker:block/poker_table_base"
+        "model": "jaxvanyang_poker:block/casino_table_base"
       }
     },
     {
@@ -13,7 +13,7 @@
         "west": "false"
       },
       "apply": {
-        "model": "jaxvanyang_poker:block/poker_table_closed",
+        "model": "jaxvanyang_poker:block/casino_table_closed",
         "uvlock": false
       }
     },
@@ -25,7 +25,7 @@
         "west": "false"
       },
       "apply": {
-        "model": "jaxvanyang_poker:block/poker_table_end",
+        "model": "jaxvanyang_poker:block/casino_table_end",
         "uvlock": false
       }
     },
@@ -37,7 +37,7 @@
         "west": "false"
       },
       "apply": {
-        "model": "jaxvanyang_poker:block/poker_table_end",
+        "model": "jaxvanyang_poker:block/casino_table_end",
         "y": 90,
         "uvlock": false
       }
@@ -50,7 +50,7 @@
         "west": "false"
       },
       "apply": {
-        "model": "jaxvanyang_poker:block/poker_table_end",
+        "model": "jaxvanyang_poker:block/casino_table_end",
         "y": 180,
         "uvlock": false
       }
@@ -63,7 +63,7 @@
         "west": "true"
       },
       "apply": {
-        "model": "jaxvanyang_poker:block/poker_table_end",
+        "model": "jaxvanyang_poker:block/casino_table_end",
         "y": 270,
         "uvlock": false
       }
@@ -76,7 +76,7 @@
         "west": "false"
       },
       "apply": {
-        "model": "jaxvanyang_poker:block/poker_table_corner",
+        "model": "jaxvanyang_poker:block/casino_table_corner",
         "uvlock": false
       }
     },
@@ -88,7 +88,7 @@
         "west": "false"
       },
       "apply": {
-        "model": "jaxvanyang_poker:block/poker_table_corner",
+        "model": "jaxvanyang_poker:block/casino_table_corner",
         "y": 90,
         "uvlock": false
       }
@@ -101,7 +101,7 @@
         "west": "true"
       },
       "apply": {
-        "model": "jaxvanyang_poker:block/poker_table_corner",
+        "model": "jaxvanyang_poker:block/casino_table_corner",
         "y": 180,
         "uvlock": false
       }
@@ -114,7 +114,7 @@
         "west": "true"
       },
       "apply": {
-        "model": "jaxvanyang_poker:block/poker_table_corner",
+        "model": "jaxvanyang_poker:block/casino_table_corner",
         "y": 270,
         "uvlock": false
       }
@@ -126,7 +126,7 @@
         "west": "true"
       },
       "apply": {
-        "model": "jaxvanyang_poker:block/poker_table_edge",
+        "model": "jaxvanyang_poker:block/casino_table_edge",
         "uvlock": false
       }
     },
@@ -137,7 +137,7 @@
         "west": "true"
       },
       "apply": {
-        "model": "jaxvanyang_poker:block/poker_table_edge",
+        "model": "jaxvanyang_poker:block/casino_table_edge",
         "y": 180,
         "uvlock": false
       }
@@ -149,7 +149,7 @@
         "south": "true"
       },
       "apply": {
-        "model": "jaxvanyang_poker:block/poker_table_edge",
+        "model": "jaxvanyang_poker:block/casino_table_edge",
         "y": 90,
         "uvlock": false
       }
@@ -161,7 +161,7 @@
         "south": "true"
       },
       "apply": {
-        "model": "jaxvanyang_poker:block/poker_table_edge",
+        "model": "jaxvanyang_poker:block/casino_table_edge",
         "y": 270,
         "uvlock": false
       }
@@ -173,7 +173,7 @@
         "northwest": "false"
       },
       "apply": {
-        "model": "jaxvanyang_poker:block/poker_table_nook",
+        "model": "jaxvanyang_poker:block/casino_table_nook",
         "uvlock": false
       }
     },
@@ -184,7 +184,7 @@
         "northeast": "false"
       },
       "apply": {
-        "model": "jaxvanyang_poker:block/poker_table_nook",
+        "model": "jaxvanyang_poker:block/casino_table_nook",
         "y": 90,
         "uvlock": false
       }
@@ -196,7 +196,7 @@
         "southeast": "false"
       },
       "apply": {
-        "model": "jaxvanyang_poker:block/poker_table_nook",
+        "model": "jaxvanyang_poker:block/casino_table_nook",
         "y": 180,
         "uvlock": false
       }
@@ -208,7 +208,7 @@
         "southwest": "false"
       },
       "apply": {
-        "model": "jaxvanyang_poker:block/poker_table_nook",
+        "model": "jaxvanyang_poker:block/casino_table_nook",
         "y": 270,
         "uvlock": false
       }
