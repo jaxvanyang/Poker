@@ -1,5 +1,6 @@
 package jaxvanyang.poker.block;
 
+import jaxvanyang.poker.entity.SeatEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -50,7 +51,7 @@ public class CasinoChair extends Block {
             BlockHitResult hitResult
     ) {
         if (!level.isClientSide()) {
-            // TODO: seat function
+            return SeatEntity.create(level, pos, 0.55, player, hitResult.getDirection());
         }
 
         return InteractionResult.SUCCESS;

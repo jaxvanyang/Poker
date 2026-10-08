@@ -2,13 +2,19 @@ package jaxvanyang.poker;
 
 import jaxvanyang.poker.block.CasinoChair;
 import jaxvanyang.poker.block.CasinoTable;
+import jaxvanyang.poker.platform.NeoForgePlatformHelper;
+import jaxvanyang.poker.platform.Services;
+import jaxvanyang.poker.renderer.SeatRenderer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.loading.FMLEnvironment;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -50,11 +56,20 @@ public class Poker {
     );
 
 
-    public Poker(IEventBus eventBus) {
+    public Poker(IEventBus bus) {
         CommonClass.init();
 
-        BLOCKS.register(eventBus);
-        ITEMS.register(eventBus);
-        CREATIVE_MODE_TABS.register(eventBus);
+        BLOCKS.register(bus);
+        ITEMS.register(bus);
+        CREATIVE_MODE_TABS.register(bus);
+
+        NeoForgePlatformHelper.ENTITY_TYPES.register(bus);
+        if (FMLEnvironment.dist == Dist.CLIENT) {
+            bus.addListener(Poker::registerEntityRenders);
+        }
+    }
+
+    private static void registerEntityRenders(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerEntityRenderer(Services.PLATFORM.getSeatEntityType(), SeatRenderer::new);
     }
 }

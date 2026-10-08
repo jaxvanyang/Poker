@@ -1,7 +1,9 @@
 package jaxvanyang.poker.platform.services;
 
-public interface IPlatformHelper {
+import jaxvanyang.poker.entity.SeatEntity;
+import net.minecraft.world.entity.EntityType;
 
+public interface IPlatformHelper {
     /**
      * Gets the name of the current platform
      *
@@ -33,4 +35,6 @@ public interface IPlatformHelper {
 
         return isDevelopmentEnvironment() ? "development" : "production";
     }
+
+    EntityType<SeatEntity> getSeatEntityType();
 }

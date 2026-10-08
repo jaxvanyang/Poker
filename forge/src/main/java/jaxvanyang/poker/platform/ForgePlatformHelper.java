@@ -1,6 +1,8 @@
 package jaxvanyang.poker.platform;
 
+import jaxvanyang.poker.entity.SeatEntity;
 import jaxvanyang.poker.platform.services.IPlatformHelper;
+import net.minecraft.world.entity.EntityType;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.loading.FMLLoader;
 
@@ -22,5 +24,10 @@ public class ForgePlatformHelper implements IPlatformHelper {
     public boolean isDevelopmentEnvironment() {
 
         return !FMLLoader.isProduction();
+    }
+
+    @Override
+    public EntityType<SeatEntity> getSeatEntityType() {
+        return null;
     }
 }
